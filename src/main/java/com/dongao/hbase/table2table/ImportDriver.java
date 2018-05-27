@@ -1,4 +1,4 @@
-package com.atguigu.hbase;
+package com.dongao.hbase.table2table;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Put;

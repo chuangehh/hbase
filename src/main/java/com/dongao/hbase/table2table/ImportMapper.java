@@ -1,4 +1,4 @@
-package com.atguigu.hbase;
+package com.dongao.hbase.table2table;
 
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CellUtil;
@@ -23,12 +23,12 @@ public class ImportMapper extends TableMapper<ImmutableBytesWritable, Put> {
     /**
      * info 列族
      */
-    final byte[] infoFamily = Bytes.toBytes("info");
+    private final byte[] infoFamily = Bytes.toBytes("info");
 
     /**
      * name 列
      */
-    final byte[] nameColumn = Bytes.toBytes("info");
+    private final byte[] nameColumn = Bytes.toBytes("info");
 
     @Override
     protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
